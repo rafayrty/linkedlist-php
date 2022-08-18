@@ -28,8 +28,32 @@ composer require rafayrty/linkedlist-php
 ## Usage
 
 ```php
-$skeleton = new Rafayrty\LinkedlistPhp();
-echo $skeleton->echoPhrase('Hello, Rafayrty!');
+$list = new Rafayrty\LinkedListPhp\SinglyList();
+//Insert a New Node to the LinkedList
+$list->push(5); // -> returns the linkedlist
+
+//Remove the Last Node from the LinkedList
+$list->pop(); // -> returns value of deleted element
+
+//Remove the Initial Node from the LinkedList
+$list->shift(); // -> returns value of deleted node
+
+//Add a Node To Beginning of the LinkedList
+$list->unshift(5); // -> returns the linkedlist
+
+//Get a Node from a specific index 
+$list->get(0); // -> returns the value of the node
+
+//Remove a Node from a specific index 
+$list->remove(0); // -> returns the value of the deleted node
+
+//Convert Your LinkedList to an array
+$list->toArray(); // -> returns an array of linkedlist
+
+//Delete an Element from a specified index to deleteCount similar to JS array splice
+$list->splice($starting,$deletecount); // -> returns the linkedlist
+
+
 ```
 
 ## Testing
@@ -42,18 +66,10 @@ composer test
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
 
-## Contributing
-
-Please see [CONTRIBUTING](https://github.com/spatie/.github/blob/main/CONTRIBUTING.md) for details.
-
-## Security Vulnerabilities
-
-Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
 
 ## Credits
 
 - [Abdul Rafay](https://github.com/rafayrty)
-- [All Contributors](../../contributors)
 
 ## License
 
