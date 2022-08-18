@@ -1,4 +1,4 @@
-# This Package allows you to have a Linked List inside Your PHP Project
+# PHP LinkedList
 
 <!-- [![Latest Version on Packagist](https://img.shields.io/packagist/v/rafayrty/linkedlist-php.svg?style=flat-square)](https://packagist.org/packages/rafayrty/linkedlist-php)
 [![Tests](https://github.com/rafayrty/linkedlist-php/actions/workflows/run-tests.yml/badge.svg?branch=main)](https://github.com/rafayrty/linkedlist-php/actions/workflows/run-tests.yml)
