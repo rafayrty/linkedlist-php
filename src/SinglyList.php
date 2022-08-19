@@ -93,10 +93,10 @@ class SinglyList
         return $temp;
     }
 
-     /**
-     *  Remove an Element From The End of the List
-     *  @return Node
-     */
+    /**
+    *  Remove an Element From The End of the List
+    *  @return Node
+    */
     public function pop()
     {
         if ($this->head === null) {
